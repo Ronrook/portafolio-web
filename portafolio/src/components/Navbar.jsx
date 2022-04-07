@@ -4,14 +4,15 @@ import { FaBars } from "react-icons/fa";
 
 
 
-function Navbar() {
+
+function Navbar({ toggleOpen }) {
     return (
-        <nav className="flex justify-between items- h-16 bg-yellow-400 text-black relative shadow-sm" role="navigation"> 
+        <nav className="flex justify-between items- h-16 bg-sky-300 text-black relative shadow-sm" role="navigation"> 
             <Link 
                 to="/" 
                 className="m-2 flex justify-center lg:justify-start">LOGO
             </Link>
-            <div className="px-4 cursor-pointer md:hidden ">
+            <div className="px-4 cursor-pointer md:hidden "onClick={toggleOpen}>
                 <div className=" text-black-500 text-3xl">
                     <FaBars/>
                 </div>  
@@ -32,7 +33,7 @@ function Navbar() {
                 <Link to="/contact" className="p-4">
                     CONTACTO
                 </Link>
-                </div>
+            </div>
         </nav>
     )
 }
