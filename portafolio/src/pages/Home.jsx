@@ -10,7 +10,7 @@ import Ojitos from '../images/OJITOS.jpg';
 
 function Home() {
     return (
-        <div className=''>
+        <div name='home' className='w-full h-screen'>
             
             <Hello/>
             <div className='flex justify-center'>
