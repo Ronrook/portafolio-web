@@ -4,7 +4,7 @@
 import React from 'react'
 import Hello from '../components/Hello';
 import CardHome from "../components/CardHome";
-import Ojitos from '../images/OJITOS.jpg';
+import ojitos from '../images/ojitos.png';
 import Data from '../data'
 
 
@@ -12,10 +12,10 @@ import Data from '../data'
 function Home() {
     return (
         <div name='home' className='w-full h-screen bg-[#0a192f]'>
-            <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
+            <div className='pt-48 max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
                 <Hello/>
                 <div className='flex justify-center'>
-                    <img className='w-1/3' src={Ojitos} alt="" />
+                    <img className='w-1/3' src={ojitos} alt="" />
                 </div>
 
 
