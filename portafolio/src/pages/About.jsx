@@ -21,7 +21,7 @@ function About() {
                     <div className='flex justify-center lg:items-center cursor-pointer' onClick={handleisVisible}>
 
 
-                        {isVisible?<img src={ojitos} alt="ojitos" className="w-36 h-36 rounded-full object-cover"/> : <img src={programador} alt="programador" className="w-36 h-36 rounded-full object-cover"/>}
+                        {isVisible? <img src={ojitos} alt="ojitos" className="w-36 h-36 rounded-full object-cover"/> : <img src={programador} alt="programador" className="w-36 h-36 rounded-full object-cover"/>}
                         
                         
                         

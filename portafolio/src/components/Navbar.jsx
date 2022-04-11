@@ -19,7 +19,7 @@ function Navbar({ toggleOpen }) {
 
     const handleNav = () => setNav(!nav);
     return (
-        <nav className="px-4 fixed w-full h-[80px] flex justify-between md:justify-center items-center  bg-indigo-500 text-white shadow-sm" role="navigation">
+        <nav className="px-4 fixed w-full h-[80px] flex justify-between md:justify-center items-center  bg-[#050533] text-white shadow-sm" role="navigation">
             
             
 
@@ -33,7 +33,7 @@ function Navbar({ toggleOpen }) {
 
 
             {/* Menu Movil */}
-            <div className={!nav? "hidden" : "absolute top-0 left-0 w-full h-screen bg-indigo-500 flex flex-col justify-center items-center"}>
+            <div className={!nav? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#050533] flex flex-col justify-center items-center"}>
         
                 <Link to="/" className="p-6 text-3xl" onClick={handleNav}>INICIO</Link>
                 <Link to="/portafolio" className="p-6 text-3xl" onClick={handleNav}>PORTAFOLIO</Link>
