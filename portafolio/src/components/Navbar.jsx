@@ -28,18 +28,18 @@ function Navbar({ toggleOpen }) {
             </div>
             <Link 
                 to="/" 
-                className="">LOGO
+                className="md:absolute md:left-6 lg:left-8">LOGO
             </Link>
 
 
             {/* Menu Movil */}
             <div className={!nav? "hidden" : "absolute top-0 left-0 w-full h-screen bg-indigo-500 flex flex-col justify-center items-center"}>
         
-                <Link to="/" className="p-6 text-4xl" onClick={handleNav}>INICIO</Link>
-                <Link to="/portafolio" className="p-6 text-4xl" onClick={handleNav}>PORTAFOLIO</Link>
-                <Link to="/about" className="p-6 text-4xl" onClick={handleNav}>SOBRE MÍ</Link>
-                <Link to="/cv" className="p-6 text-4xl" onClick={handleNav}>CV</Link>
-                <Link to="/contact" className="p-6 text-4xl" onClick={handleNav}>CONTACTO</Link>
+                <Link to="/" className="p-6 text-3xl" onClick={handleNav}>INICIO</Link>
+                <Link to="/portafolio" className="p-6 text-3xl" onClick={handleNav}>PORTAFOLIO</Link>
+                <Link to="/about" className="p-6 text-3xl" onClick={handleNav}>SOBRE MÍ</Link>
+                {/* <Link to="/cv" className="p-6 text-3xl" onClick={handleNav}>CV</Link> */}
+                <Link to="/contact" className="p-6 text-3xl" onClick={handleNav}>CONTACTO</Link>
             
             </div>
 
@@ -47,7 +47,7 @@ function Navbar({ toggleOpen }) {
                 <Link to="/" className="p-4">INICIO</Link>
                 <Link to="/portafolio" className="p-4">PORTAFOLIO</Link>
                 <Link to="/about" className="p-4">SOBRE MÍ</Link>
-                <Link to="/cv" className="p-4">CV</Link>
+                {/* <Link to="/cv" className="p-4">CV</Link> */}
                 <Link to="/contact" className="p-4">CONTACTO</Link>
             </div>
 
